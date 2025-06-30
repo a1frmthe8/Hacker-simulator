@@ -1,0 +1,41 @@
+body {
+  background: #181a1b;
+  color: #33ff33;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.terminal {
+  background: #111;
+  border-radius: 8px;
+  box-shadow: 0 0 24px #000a;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 2rem;
+  font-size: 1.1rem;
+  min-height: 400px;
+  line-height: 1.6;
+}
+
+.terminal-input {
+  background: transparent;
+  border: none;
+  color: #33ff33;
+  font-family: inherit;
+  font-size: 1.1rem;
+  outline: none;
+  width: 90%;
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 1ch;
+  background: #33ff33;
+  animation: blink 1s steps(1) infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  50% { background: transparent; }
+}
